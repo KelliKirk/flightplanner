@@ -1,6 +1,6 @@
 // Kood genereeritud Claude AI poolt
 
-package main.java.com.cgi.flightbooking.dto;
+package com.cgi.flightbooking.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

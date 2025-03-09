@@ -1,6 +1,6 @@
 // Kood genereeritud Claude AI poolt
 
-package main.java.com.cgi.flightbooking.repository;
+package com.cgi.flightbooking.repository;
 
 import com.cgi.flightbooking.model.Seat;
 import org.springframework.data.jpa.repository.JpaRepository;

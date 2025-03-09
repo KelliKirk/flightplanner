@@ -1,6 +1,6 @@
 // Kood genereeritud Claude AI poolt
 
-package main.java.com.cgi.flightbooking.service;
+package com.cgi.flightbooking.service;
 
 import com.cgi.flightbooking.dto.FlightDTO;
 import com.cgi.flightbooking.dto.FlightSearchDTO;

@@ -1,9 +1,9 @@
 // Kood genereeritud Claude AI poolt
 
-package main.java.com.cgi.flightbooking.controller;
+package com.cgi.flightbooking.controller;
 
-import com.example.flightplanner.model.Flight;
-import com.example.flightplanner.service.FlightService;
+import com.cgi.flightplanner.model.Flight;
+import com.cgi.flightplanner.service.FlightService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;

@@ -1,6 +1,6 @@
 // Kood genereeritud Claude AI poolt
 
-package main.java.com.cgi.flightbooking;
+package com.cgi.flightbooking;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

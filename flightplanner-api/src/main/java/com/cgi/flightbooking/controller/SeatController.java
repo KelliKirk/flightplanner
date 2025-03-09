@@ -1,11 +1,11 @@
 // Kood genereeritud Claude AI poolt
 
-package main.java.com.cgi.flightbooking.controller;
+package com.cgi.flightbooking.controller;
 
-import com.example.flightplanner.dto.SeatPreference;
-import com.example.flightplanner.dto.SeatRecommendation;
-import com.example.flightplanner.model.Seat;
-import com.example.flightplanner.service.SeatService;
+import com.cgi.flightplanner.dto.SeatPreference;
+import com.cgi.flightplanner.dto.SeatRecommendation;
+import com.cgi.flightplanner.model.Seat;
+import com.cgi.flightplanner.service.SeatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -35,7 +35,7 @@ public class SeatController {
     }
 
     @PostMapping("/flight/{flightId}/recommend")
-    public ResponseEntity<SeatRecommendation> recommendSeats(
+    public ResponseEntity<SeatRecommendationDTO> recommendSeats(
             @PathVariable Long flightId,
             @RequestParam int numberOfPassengers,
             @RequestBody SeatPreference preferences) {

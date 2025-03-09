@@ -1,6 +1,6 @@
 // Kood genereeritud Claude AI poolt
 
-package main.java.com.cgi.flightbooking.model;
+package com.cgi.flightbooking.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

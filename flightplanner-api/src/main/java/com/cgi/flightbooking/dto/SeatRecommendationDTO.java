@@ -1,6 +1,6 @@
 // Kood genereeritud Claude AI poolt
 
-package main.java.com.cgi.flightbooking.dto;
+package com.cgi.flightbooking.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,7 +12,7 @@ import java.util.Map;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SeatRecommendation {
+public class SeatRecommendationDTO {
     private List<Seat> recommendedSeats;
     private Map<String, Double> matchScores; // How well each seat matches preferences (0-100%)
     private String reasonForRecommendation;
