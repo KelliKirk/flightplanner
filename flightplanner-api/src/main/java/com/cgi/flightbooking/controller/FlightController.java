@@ -2,8 +2,9 @@
 
 package com.cgi.flightbooking.controller;
 
-import com.cgi.flightplanner.model.Flight;
-import com.cgi.flightplanner.service.FlightService;
+import com.cgi.flightbooking.dto.FlightDTO;
+import com.cgi.flightbooking.dto.FlightSearchDTO;
+import com.cgi.flightbooking.service.FlightService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
@@ -17,35 +18,41 @@ import java.util.List;
 @RequestMapping("/api/flights")
 @CrossOrigin(origins = "*")
 public class FlightController {
-
     private final FlightService flightService;
-
+    
     @Autowired
     public FlightController(FlightService flightService) {
         this.flightService = flightService;
     }
-
+    
     @GetMapping
-    public ResponseEntity<List<Flight>> getAllFlights() {
+    public ResponseEntity<List<FlightDTO>> getAllFlights() {
         return ResponseEntity.ok(flightService.getAllFlights());
     }
-
+    
     @GetMapping("/filter")
-    public ResponseEntity<List<Flight>> getFilteredFlights(
+    public ResponseEntity<List<FlightDTO>> getFilteredFlights(
             @RequestParam(required = false) String destination,
+            @RequestParam(required = false) String origin,
             @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date,
-            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.TIME) LocalTime earliestDeparture,
-            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.TIME) LocalTime latestDeparture,
             @RequestParam(required = false) Double maxPrice) {
         
-        return ResponseEntity.ok(flightService.getFilteredFlights(
-            destination, date, earliestDeparture, latestDeparture, maxPrice));
+        FlightSearchDTO searchDTO = new FlightSearchDTO();
+        searchDTO.setDestination(destination);
+        searchDTO.setOrigin(origin);
+        searchDTO.setDepartureDate(date);
+        searchDTO.setMaxPrice(maxPrice);
+        
+        return ResponseEntity.ok(flightService.searchFlights(searchDTO));
     }
-
+    
     @GetMapping("/{id}")
-    public ResponseEntity<Flight> getFlightById(@PathVariable Long id) {
-        return flightService.getFlightById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+    public ResponseEntity<FlightDTO> getFlightById(@PathVariable Long id) {
+        try {
+            FlightDTO flight = flightService.getFlightById(id);
+            return ResponseEntity.ok(flight);
+        } catch (Exception e) {
+            return ResponseEntity.notFound().build();
+        }
     }
 }

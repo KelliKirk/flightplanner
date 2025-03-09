@@ -1,7 +1,8 @@
 /home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/controller/SeatController.java
-/home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/dto/SeatRecommendation.java
 /home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/dto/SeatDTO.java
 /home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/repository/BookingRepository.java
+/home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/dto/SeatRecommendationDTO.java
+/home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/exception/ResourceNotFoundException.java
 /home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/model/Seat.java
 /home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/FlightBookingApplication.java
 /home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/model/Booking.java
@@ -12,6 +13,7 @@
 /home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/service/SeatService.java
 /home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/dto/SeatPreferenceDTO.java
 /home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/service/FlightService.java
+/home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/configuration/ActuatorConfig.java
 /home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/service/BookingService.java
 /home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/model/Flight.java
 /home/kelli/flightplanner/flightplanner-api/src/main/java/com/cgi/flightbooking/repository/FlightRepository.java

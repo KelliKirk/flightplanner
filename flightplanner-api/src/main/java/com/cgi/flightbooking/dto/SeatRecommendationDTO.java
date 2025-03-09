@@ -2,6 +2,7 @@
 
 package com.cgi.flightbooking.dto;
 
+import com.cgi.flightbooking.model.Seat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

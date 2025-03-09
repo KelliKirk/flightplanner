@@ -1,22 +1,51 @@
-// Kood genereeritud Claude AI poolt
+// Kood genereeritud chatGPT poolt
 
 package com.cgi.flightbooking.dto;
 
-import com.cgi.flightbooking.model.Seat;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class SeatDTO {
     private Long id;
     private String seatNumber;
-    private Seat.SeatType seatType;
-    private Seat.SeatClass seatClass;
-    private boolean isWindowSeat;
-    private boolean isExitRowSeat;
-    private boolean hasExtraLegroom;
-    private boolean isOccupied;
+    private boolean occupied;
+    private Long flightId;
+
+    // Konstruktor
+    public SeatDTO(Long id, String seatNumber, boolean occupied, Long flightId) {
+        this.id = id;
+        this.seatNumber = seatNumber;
+        this.occupied = occupied;
+        this.flightId = flightId;
+    }
+
+    // Getterid ja setterid
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getSeatNumber() {
+        return seatNumber;
+    }
+
+    public void setSeatNumber(String seatNumber) {
+        this.seatNumber = seatNumber;
+    }
+
+    public boolean isOccupied() {
+        return occupied;
+    }
+
+    public void setOccupied(boolean occupied) {
+        this.occupied = occupied;
+    }
+
+    public Long getFlightId() {
+        return flightId;
+    }
+
+    public void setFlightId(Long flightId) {
+        this.flightId = flightId;
+    }
 }

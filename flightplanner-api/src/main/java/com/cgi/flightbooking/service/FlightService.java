@@ -17,7 +17,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class FlightService {
-
     @Autowired
     private FlightRepository flightRepository;
     
@@ -50,6 +49,43 @@ public class FlightService {
         ).stream()
                 .map(this::convertToDTO)
                 .collect(Collectors.toList());
+    }
+    
+    // This method addresses the filter parameters in FlightController
+    public List<FlightDTO> getFilteredFlights(
+            String destination, 
+            LocalDateTime date, 
+            LocalDateTime earliestDeparture, 
+            LocalDateTime latestDeparture, 
+            Double maxPrice) {
+        
+        // Create a FlightSearchDTO and delegate to the searchFlights method
+        FlightSearchDTO searchDTO = new FlightSearchDTO();
+        searchDTO.setDestination(destination);
+        // Convert the LocalDateTime to LocalDate if needed
+        if (date != null) {
+            searchDTO.setDepartureDate(date.toLocalDate());
+        }
+        searchDTO.setMaxPrice(maxPrice);
+        
+        // Use the existing search method
+        List<FlightDTO> results = searchFlights(searchDTO);
+        
+        // Further filter by departure time range if specified
+        if (earliestDeparture != null || latestDeparture != null) {
+            results = results.stream()
+                .filter(flight -> {
+                    LocalDateTime departureTime = flight.getDepartureTime();
+                    boolean afterEarliest = earliestDeparture == null || 
+                                           !departureTime.isBefore(earliestDeparture);
+                    boolean beforeLatest = latestDeparture == null || 
+                                          !departureTime.isAfter(latestDeparture);
+                    return afterEarliest && beforeLatest;
+                })
+                .collect(Collectors.toList());
+        }
+        
+        return results;
     }
     
     private FlightDTO convertToDTO(Flight flight) {

@@ -1,22 +1,24 @@
-// Kood genereeritud Claude AI poolt
+// Kood genereeritud chatGPT poolt
 
 package com.cgi.flightbooking.dto;
 
-import com.cgi.flightbooking.model.Seat;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class SeatPreferenceDTO {
-    private Boolean isWindowSeat;
-    private Boolean hasExtraLegroom;
-    private Boolean isExitRowSeat;
-    private Seat.SeatClass seatClass;
-    private Integer numberOfSeats;
-    private Boolean requireAdjacentSeats;
+    private int preferredSeatsCount;
+
+    // Konstruktor
+    public SeatPreferenceDTO(int preferredSeatsCount) {
+        this.preferredSeatsCount = preferredSeatsCount;
+    }
+
+    // Getter
+    public int getPreferredSeatsCount() {
+        return preferredSeatsCount;
+    }
+
+    // Setter
+    public void setPreferredSeatsCount(int preferredSeatsCount) {
+        this.preferredSeatsCount = preferredSeatsCount;
+    }
 }
 
 
