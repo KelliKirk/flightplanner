@@ -27,3 +27,211 @@
 2025-03-09 17:08:01 - Starting ProtocolHandler ["http-nio-8081"]
 2025-03-09 17:08:01 - Tomcat started on port(s): 8081 (http) with context path ''
 2025-03-09 17:08:01 - Started FlightBookingApplication in 3.848 seconds (process running for 4.084)
+2025-03-09 17:12:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-09 17:12:44 - HikariPool-1 - Shutdown initiated...
+2025-03-09 17:12:44 - HikariPool-1 - Shutdown completed.
+2025-03-10 13:52:19 - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-10 13:52:19 - Starting FlightBookingApplication using Java 17.0.14 with PID 392575 (/home/kelli/flightplanner/flightplanner-api/target/classes started by kelli in /home/kelli/flightplanner/flightplanner-api)
+2025-03-10 13:52:19 - Running with Spring Boot v3.1.5, Spring v6.0.13
+2025-03-10 13:52:19 - No active profile set, falling back to 1 default profile: "default"
+2025-03-10 13:52:20 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-10 13:52:20 - Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
+2025-03-10 13:52:20 - Tomcat initialized with port(s): 8081 (http)
+2025-03-10 13:52:20 - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-10 13:52:20 - Starting service [Tomcat]
+2025-03-10 13:52:20 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-03-10 13:52:20 - Initializing Spring embedded WebApplicationContext
+2025-03-10 13:52:20 - Root WebApplicationContext: initialization completed in 1181 ms
+2025-03-10 13:52:20 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-10 13:52:20 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-03-10 13:52:20 - HHH000406: Using bytecode reflection optimizer
+2025-03-10 13:52:21 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-10 13:52:21 - HikariPool-1 - Starting...
+2025-03-10 13:52:21 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b091a92
+2025-03-10 13:52:21 - HikariPool-1 - Start completed.
+2025-03-10 13:52:22 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-10 13:52:22 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10 13:52:22 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-10 13:52:22 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-10 13:52:23 - Exposing 14 endpoint(s) beneath base path '/actuator'
+2025-03-10 13:52:23 - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-10 13:52:23 - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-10 13:52:23 - Started FlightBookingApplication in 4.303 seconds (process running for 4.585)
+2025-03-10 13:52:56 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-10 13:52:56 - Initializing Servlet 'dispatcherServlet'
+2025-03-10 13:52:56 - Completed initialization in 3 ms
+2025-03-10 13:52:56 - No mapping for GET /
+2025-03-10 13:52:56 - No mapping for GET /favicon.ico
+2025-03-10 13:57:44 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.] with root cause
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:538)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:538)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-03-10 14:03:44 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.] with root cause
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:538)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:538)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-03-10 14:04:56 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.] with root cause
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:538)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:538)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-03-10 14:05:22 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10 14:05:22 - HikariPool-1 - Shutdown initiated...
+2025-03-10 14:05:22 - HikariPool-1 - Shutdown completed.
+2025-03-10 14:05:38 - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-10 14:05:38 - Starting FlightBookingApplication using Java 17.0.14 with PID 397022 (/home/kelli/flightplanner/flightplanner-api/target/classes started by kelli in /home/kelli/flightplanner/flightplanner-api)
+2025-03-10 14:05:38 - Running with Spring Boot v3.1.5, Spring v6.0.13
+2025-03-10 14:05:38 - No active profile set, falling back to 1 default profile: "default"
+2025-03-10 14:05:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-10 14:05:38 - Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+2025-03-10 14:05:39 - Tomcat initialized with port(s): 8081 (http)
+2025-03-10 14:05:39 - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-10 14:05:39 - Starting service [Tomcat]
+2025-03-10 14:05:39 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-03-10 14:05:39 - Initializing Spring embedded WebApplicationContext
+2025-03-10 14:05:39 - Root WebApplicationContext: initialization completed in 1270 ms
+2025-03-10 14:05:39 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-10 14:05:39 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-03-10 14:05:39 - HHH000406: Using bytecode reflection optimizer
+2025-03-10 14:05:39 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-10 14:05:39 - HikariPool-1 - Starting...
+2025-03-10 14:05:40 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fc1abf
+2025-03-10 14:05:40 - HikariPool-1 - Start completed.
+2025-03-10 14:05:40 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-10 14:05:41 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10 14:05:41 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-10 14:05:41 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-10 14:05:42 - Exposing 14 endpoint(s) beneath base path '/actuator'
+2025-03-10 14:05:42 - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-10 14:05:42 - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-10 14:05:42 - Started FlightBookingApplication in 4.505 seconds (process running for 4.828)
+2025-03-10 14:05:48 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-10 14:05:48 - Initializing Servlet 'dispatcherServlet'
+2025-03-10 14:05:48 - Completed initialization in 2 ms
+2025-03-10 14:05:48 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-10 14:05:48 - No mapping for GET /favicon.ico
+2025-03-10 14:09:45 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10 14:09:45 - HikariPool-1 - Shutdown initiated...
+2025-03-10 14:09:45 - HikariPool-1 - Shutdown completed.
