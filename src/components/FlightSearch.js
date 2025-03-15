@@ -14,15 +14,28 @@ const SearchContainer = styled.div`
   border-radius: 10px;
 `;
 
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: flex-end; /* Asetab nupu paremale */
+  width: 100%;
+  margin-top: 1rem; /* Lisa vahe filtrite ja nupu vahele */
+`;
+
+const StyledButton = styled(Button)`
+  padding: 0.5rem 1rem; /* Väiksem nupp */
+  font-size: 0.9rem;
+`;
+
 const FlightSearch = () => {
   const [flights, setFlights] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [validationError, setValidationError] = useState(null);
+
   const [filters, setFilters] = useState({
     origin: '',
     destination: '',
     departureDate: '',
-    returnDate: '', 
     passengers: 1
   });
 
@@ -31,17 +44,47 @@ const FlightSearch = () => {
       ...filters,
       [name]: value
     });
+    setValidationError(null);
+  };
+
+  const validateFilters = () => {
+    if (!filters.origin) {
+      setValidationError('Please select an origin city');
+      return false;
+    }
+    if (!filters.destination) {
+      setValidationError('Please select a destination city');
+      return false;
+    }
+    if (!filters.departureDate) {
+      setValidationError('Please select a departure date');
+      return false;
+    }
+    if (filters.origin === filters.destination) {
+      setValidationError('Origin and destination cannot be the same');
+      return false;
+    }
+    return true;
   };
 
   const handleSearch = async () => {
+    if (!validateFilters()) {
+      return;
+    }
+
     setLoading(true);
     setError(null);
-    
+
     try {
       const flightsData = await fetchFlights(filters);
-      setFlights(flightsData);
+
+      if (flightsData.length === 0) {
+        setError('No flights found matching your criteria. Please try different dates or destinations.');
+      } else {
+        setFlights(flightsData);
+      }
     } catch (err) {
-      setError('NetworkError when attempting to fetch resource.');
+      setError('Error connecting to server. Please try again later.');
       console.error("Search error:", err);
     } finally {
       setLoading(false);
@@ -51,32 +94,33 @@ const FlightSearch = () => {
   return (
     <SearchContainer id="flight-search">
       <h2>Search flights</h2>
-      
+
       <Flex>
         <SearchFilter 
           name="origin" 
           label="From" 
           value={filters.origin} 
           onChange={handleFilterChange} 
-          options={['Tallinn', 'Riga', 'Helsinki', 'Vilnius']} 
+          options={['Tallinn', 'Riga', 'Helsinki', 'Vilnius', 'London', 'Paris']} 
         />
-        
+
         <SearchFilter 
           name="destination" 
           label="To" 
           value={filters.destination} 
           onChange={handleFilterChange}
-          options={['London', 'Paris', 'Berlin', 'New York']} 
+          options={['London', 'Paris', 'Berlin', 'New York', 'Tallinn', 'Riga']} 
         />
-        
+
         <SearchFilter 
           name="departureDate" 
           label="Departure date" 
           value={filters.departureDate} 
           onChange={handleFilterChange}
           type="date" 
+          min={new Date().toISOString().split('T')[0]} 
         />
-        
+
         <SearchFilter 
           name="passengers" 
           label="Passengers" 
@@ -84,15 +128,19 @@ const FlightSearch = () => {
           onChange={handleFilterChange}
           type="number" 
           min="1"
+          max="9"
         />
-        
-        <Button primary onClick={handleSearch} disabled={loading}>
-          {loading ? 'Searching...' : 'Search flights'}
-        </Button>
       </Flex>
-      
+
+      <ButtonContainer>
+        <StyledButton primary onClick={handleSearch} disabled={loading}>
+          {loading ? 'Searching...' : 'Search flights'}
+        </StyledButton>
+      </ButtonContainer>
+
+      {validationError && <ErrorMessage message={validationError} />}
       {error && <ErrorMessage message={error} />}
-      
+
       {flights.length > 0 && <FlightTable flights={flights} />}
     </SearchContainer>
   );

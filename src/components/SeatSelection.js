@@ -63,7 +63,7 @@ const SeatSelection = ({ flightId, seats, onClose }) => {
 
   const handleBooking = async () => {
     if (selectedSeats.length === 0) {
-      setError('Palun vali vähemalt üks istekoht');
+      setError('Please select at least one seat');
       return;
     }
 
@@ -88,7 +88,7 @@ const SeatSelection = ({ flightId, seats, onClose }) => {
 
   return (
     <SeatContainer>
-      <h3>Select seats for a flight ID: {flightId}</h3>
+      <h3>Select seats for flight ID: {flightId}</h3>
       
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {success && <p style={{ color: 'green' }}>Seats booked successfully!</p>}
@@ -102,7 +102,7 @@ const SeatSelection = ({ flightId, seats, onClose }) => {
             onClick={() => !seat.booked && toggleSeatSelection(seat.id)}
           >
             {seat.seatNumber} 
-            {seat.booked && " (Broneeritud)"}
+            {seat.booked && " (Booked)"}
           </Seat>
         ))}
       </SeatGrid>
@@ -110,13 +110,13 @@ const SeatSelection = ({ flightId, seats, onClose }) => {
       <p>Selected seats: {selectedSeats.length}</p>
       
       <ActionButtons>
-        <Button onClick={onClose}>Tühista</Button>
+        <Button onClick={onClose}>Cancel</Button>
         <Button 
           primary 
           onClick={handleBooking} 
           disabled={loading || selectedSeats.length === 0 || success}
         >
-          {loading ? 'Broneerin...' : 'Broneeri valitud istekohad'}
+          {loading ? 'Booking...' : 'Book selected seats'}
         </Button>
       </ActionButtons>
     </SeatContainer>

@@ -41,7 +41,14 @@ export async function fetchFlights(filters = {}) {
             throw new Error(`Network error: ${response.status} ${response.statusText}`);
         }
         
-        return await response.json();
+        const data = await response.json();
+        
+        // Format dates properly for each flight
+        return data.map(flight => ({
+            ...flight,
+            departureTime: flight.departureTime ? new Date(flight.departureTime).toLocaleString() : 'Not available',
+            arrivalTime: flight.arrivalTime ? new Date(flight.arrivalTime).toLocaleString() : 'Not available'
+        }));
     } catch (error) {
         console.error('API error:', error);
         // Fallback to mock data in case of error for development
@@ -67,18 +74,13 @@ export async function getSeatsForFlight(flightId) {
         return await response.json();
     } catch (error) {
         console.error('API error:', error);
-        // Fallback to mock data in case of error for development
-        if (process.env.NODE_ENV === 'development') {
-            console.warn('Using mock seat data due to API error');
-            return getMockSeats();
-        }
         throw error;
     }
 }
 
 export async function bookFlight(bookingData) {
     try {
-        const response = await fetch(`${API_BASE_URL}/flights/${bookingData.flightId}/book`, {
+        const response = await fetch(`${API_BASE_URL}/bookings`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -101,50 +103,39 @@ export async function bookFlight(bookingData) {
 
 // Mock data for testing when backend is unavailable
 function getMockFlights() {
-    return [
+    const flights = [
         {
             id: 1,
             airline: 'AirBaltic',
-            origin: 'Riga',
-            destination: 'Paris',
+            origin: 'Tallinn',
+            destination: 'London',
             departureTime: '2025-03-17T09:30:00',
             arrivalTime: '2025-03-17T11:45:00',
-            price: 199.99
+            price: 150
         },
         {
             id: 2,
-            airline: 'Lufthansa',
-            origin: 'Riga',
-            destination: 'Paris',
+            airline: 'Finnair',
+            origin: 'London',
+            destination: 'Tallinn',
             departureTime: '2025-03-17T13:15:00',
             arrivalTime: '2025-03-17T15:30:00',
-            price: 249.99
+            price: 145
         },
         {
             id: 3,
-            airline: 'Air France',
-            origin: 'Riga',
+            airline: 'Lufthansa',
+            origin: 'Tallinn',
             destination: 'Paris',
             departureTime: '2025-03-17T18:00:00',
             arrivalTime: '2025-03-17T20:15:00',
-            price: 279.99
+            price: 180
         }
     ];
-}
-
-function getMockSeats() {
-    const seats = [];
-    // Generate 6 rows of 6 seats each
-    for (let row = 1; row <= 6; row++) {
-        for (let col of ['A', 'B', 'C', 'D', 'E', 'F']) {
-            const seatId = seats.length + 1;
-            seats.push({
-                id: seatId,
-                seatNumber: `${row}${col}`,
-                booked: Math.random() > 0.7, // ~30% of seats are booked
-                price: 10 + Math.floor(Math.random() * 20) // Price between 10-30
-            });
-        }
-    }
-    return seats;
+    
+    return flights.map(flight => ({
+        ...flight,
+        departureTime: new Date(flight.departureTime).toLocaleString(),
+        arrivalTime: new Date(flight.arrivalTime).toLocaleString()
+    }));
 }

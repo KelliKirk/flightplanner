@@ -321,3 +321,916 @@ java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigin
     from
         flights f1_0
 2025-03-15 11:45:41 - No mapping for GET /favicon.ico
+2025-03-15 11:57:44 - No mapping for GET /api/health
+2025-03-15 11:58:14 - No mapping for GET /api/
+2025-03-15 11:58:17 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 11:58:18 - No mapping for GET /favicon.ico
+2025-03-15 12:01:24 - No mapping for GET /api/health
+2025-03-15 12:02:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-15 12:02:03 - HikariPool-1 - Shutdown initiated...
+2025-03-15 12:02:03 - HikariPool-1 - Shutdown completed.
+2025-03-15 12:02:19 - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-15 12:02:19 - Starting FlightBookingApplication using Java 17.0.14 with PID 1506565 (/home/kelli/flightplanner/flightplanner-api/target/classes started by kelli in /home/kelli/flightplanner/flightplanner-api)
+2025-03-15 12:02:19 - Running with Spring Boot v3.1.5, Spring v6.0.13
+2025-03-15 12:02:19 - No active profile set, falling back to 1 default profile: "default"
+2025-03-15 12:02:20 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-15 12:02:20 - Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+2025-03-15 12:02:20 - Tomcat initialized with port(s): 8081 (http)
+2025-03-15 12:02:20 - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-15 12:02:20 - Starting service [Tomcat]
+2025-03-15 12:02:20 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-03-15 12:02:21 - Initializing Spring embedded WebApplicationContext
+2025-03-15 12:02:21 - Root WebApplicationContext: initialization completed in 1416 ms
+2025-03-15 12:02:21 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-15 12:02:21 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-03-15 12:02:21 - HHH000406: Using bytecode reflection optimizer
+2025-03-15 12:02:21 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-15 12:02:21 - HikariPool-1 - Starting...
+2025-03-15 12:02:21 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f810c18
+2025-03-15 12:02:21 - HikariPool-1 - Start completed.
+2025-03-15 12:02:22 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-15 12:02:22 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-15 12:02:23 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-15 12:02:23 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-15 12:02:24 - Exposing 14 endpoint(s) beneath base path '/actuator'
+2025-03-15 12:02:24 - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-15 12:02:24 - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-15 12:02:24 - Started FlightBookingApplication in 5.021 seconds (process running for 5.304)
+2025-03-15 12:02:28 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-15 12:02:28 - Initializing Servlet 'dispatcherServlet'
+2025-03-15 12:02:28 - Completed initialization in 2 ms
+2025-03-15 12:02:28 - No mapping for GET /favicon.ico
+2025-03-15 12:06:47 - No mapping for GET /images/logo.svg
+2025-03-15 12:06:47 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:06:54 - No mapping for GET /images/logo.svg
+2025-03-15 12:06:54 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:10:01 - No mapping for GET /images/logo.svg
+2025-03-15 12:10:01 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:10:14 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:10:15 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:10:16 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:10:16 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:10:17 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:10:41 - No mapping for GET /images/logo.svg
+2025-03-15 12:10:41 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:10:51 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:10:52 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:10:52 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:10:52 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:10:52 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:10:53 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:10:53 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:10:53 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:10:53 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:11:47 - No mapping for GET /flights/api/%7BflightId%7D/seats
+2025-03-15 12:12:17 - No mapping for GET /api/%7BflightId%7D/seats
+2025-03-15 12:12:28 - No mapping for GET /api/seats
+2025-03-15 12:12:35 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:12:35 - No mapping for GET /favicon.ico
+2025-03-15 12:12:56 - No mapping for GET /api/seats
+2025-03-15 12:14:51 - 
+    select
+        s1_0.id,
+        s1_0.flight_id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:14:51 - No mapping for GET /favicon.ico
+2025-03-15 12:16:58 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:16:58 - No mapping for GET /images/logo.svg
+2025-03-15 12:17:40 - No mapping for GET /images/logo.svg
+2025-03-15 12:17:40 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:18:40 - No mapping for GET /images/logo.svg
+2025-03-15 12:18:40 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:18:55 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:19:26 - No mapping for GET /images/logo.svg
+2025-03-15 12:19:26 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:19:30 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:20:38 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:29:14 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:29:14 - No mapping for GET /images/logo.svg
+2025-03-15 12:29:25 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:29:25 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:29:25 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:29:25 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:29:25 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:29:25 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:29:25 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:29:45 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:29:45 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:29:45 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:29:45 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:29:45 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:29:45 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:29:45 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:29:47 - No mapping for GET /api/flights/1/seats
+2025-03-15 12:29:48 - No mapping for GET /api/flights/1/seats
+2025-03-15 12:29:49 - No mapping for GET /api/flights/1/seats
+2025-03-15 12:29:49 - No mapping for GET /api/flights/1/seats
+2025-03-15 12:29:49 - No mapping for GET /api/flights/1/seats
+2025-03-15 12:29:50 - No mapping for GET /api/flights/1/seats
+2025-03-15 12:29:50 - No mapping for GET /api/flights/1/seats
+2025-03-15 12:29:50 - No mapping for GET /api/flights/1/seats
+2025-03-15 12:29:50 - No mapping for GET /api/flights/1/seats
+2025-03-15 12:30:01 - No mapping for OPTIONS /api/flights/1/book
+2025-03-15 12:30:06 - No mapping for OPTIONS /api/flights/1/book
+2025-03-15 12:30:14 - No mapping for GET /api/flights/2/seats
+2025-03-15 12:30:58 - No mapping for OPTIONS /api/flights/2/book
+2025-03-15 12:33:12 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-15 12:33:12 - HikariPool-1 - Shutdown initiated...
+2025-03-15 12:33:12 - HikariPool-1 - Shutdown completed.
+2025-03-15 12:33:30 - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-15 12:33:30 - Starting FlightBookingApplication using Java 17.0.14 with PID 1515139 (/home/kelli/flightplanner/flightplanner-api/target/classes started by kelli in /home/kelli/flightplanner/flightplanner-api)
+2025-03-15 12:33:30 - Running with Spring Boot v3.1.5, Spring v6.0.13
+2025-03-15 12:33:30 - No active profile set, falling back to 1 default profile: "default"
+2025-03-15 12:33:31 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-15 12:33:31 - Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+2025-03-15 12:33:32 - Tomcat initialized with port(s): 8081 (http)
+2025-03-15 12:33:32 - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-15 12:33:32 - Starting service [Tomcat]
+2025-03-15 12:33:32 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-03-15 12:33:32 - Initializing Spring embedded WebApplicationContext
+2025-03-15 12:33:32 - Root WebApplicationContext: initialization completed in 1383 ms
+2025-03-15 12:33:32 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-15 12:33:32 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-03-15 12:33:32 - HHH000406: Using bytecode reflection optimizer
+2025-03-15 12:33:32 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-15 12:33:32 - HikariPool-1 - Starting...
+2025-03-15 12:33:33 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e159116
+2025-03-15 12:33:33 - HikariPool-1 - Start completed.
+2025-03-15 12:33:34 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-15 12:33:34 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-15 12:33:34 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-15 12:33:35 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-15 12:33:35 - Exposing 14 endpoint(s) beneath base path '/actuator'
+2025-03-15 12:33:35 - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-15 12:33:35 - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-15 12:33:35 - Started FlightBookingApplication in 4.929 seconds (process running for 5.203)
+2025-03-15 12:33:40 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-15 12:33:40 - Initializing Servlet 'dispatcherServlet'
+2025-03-15 12:33:40 - Completed initialization in 2 ms
+2025-03-15 12:33:40 - No mapping for GET /images/logo.svg
+2025-03-15 12:33:40 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:33:54 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:33:54 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:33:54 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:33:54 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:33:54 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:33:54 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:33:54 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:48:08 - No mapping for GET /images/logo.svg
+2025-03-15 12:48:08 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:48:17 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 12:48:17 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:48:17 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:48:17 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:48:17 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:48:17 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:48:17 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 12:48:33 - No mapping for GET /images/logo.svg
+2025-03-15 12:48:33 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:49:37 - No mapping for GET /images/logo.svg
+2025-03-15 12:49:37 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:50:40 - No mapping for GET /images/logo.svg
+2025-03-15 12:50:40 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:50:48 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:50:48 - No mapping for GET /images/logo.svg
+2025-03-15 12:51:33 - No mapping for GET /images/logo.svg
+2025-03-15 12:51:33 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:52:05 - No mapping for GET /images/logo.svg
+2025-03-15 12:52:05 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:53:37 - No mapping for GET /images/logo.svg
+2025-03-15 12:53:37 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:53:55 - No mapping for GET /images/logo.svg
+2025-03-15 12:53:55 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 12:54:02 - No mapping for GET /images/logo.svg
+2025-03-15 12:54:02 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 13:05:19 - No mapping for GET /images/logo.svg
+2025-03-15 13:05:19 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 13:05:37 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 13:05:37 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 13:05:37 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 13:05:37 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 13:05:37 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 13:05:37 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 13:05:37 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-15 13:16:53 - No mapping for GET /images/logo.svg
+2025-03-15 13:16:53 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 13:20:09 - No mapping for GET /images/logo.svg
+2025-03-15 13:20:09 - No mapping for GET /images/illustration-mockups.svg

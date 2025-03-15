@@ -20,13 +20,13 @@ public class FlightBookingApplication {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:3000")
+                        .allowedOrigins("http://localhost:3020")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
 
                         registry.addMapping("/actuator/**")
-                        .allowedOrigins("http://localhost:3000", "http://localhost:8081")
+                        .allowedOrigins("http://localhost:3020", "http://localhost:8081")
                         .allowedMethods("GET", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);

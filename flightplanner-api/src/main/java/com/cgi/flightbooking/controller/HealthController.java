@@ -1,3 +1,4 @@
+// Kood kirjutatud Claude AI poolt
 package com.cgi.flightbooking.controller;
 
 import org.springframework.web.bind.annotation.RestController;
