@@ -21,7 +21,7 @@ function App() {
     <GlobalStyles />
     <Header />
     <Container>
-      <h1>Lennuplaneerija</h1>
+      <h1>Flight Planner</h1>
       <FlightSearch />
     </Container>
     </>

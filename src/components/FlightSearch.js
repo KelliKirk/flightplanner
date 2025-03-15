@@ -41,14 +41,15 @@ const FlightSearch = () => {
       const flightsData = await fetchFlights(filters);
       setFlights(flightsData);
     } catch (err) {
-      setError(err.message);
+      setError('NetworkError when attempting to fetch resource.');
+      console.error("Search error:", err);
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <SearchContainer>
+    <SearchContainer id="flight-search">
       <h2>Search flights</h2>
       
       <Flex>

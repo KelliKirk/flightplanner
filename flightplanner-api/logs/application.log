@@ -268,3 +268,56 @@ java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigin
 2025-03-11 14:27:47 - No mapping for GET /flights
 2025-03-11 14:28:02 - No mapping for GET /flights
 2025-03-11 14:38:57 - No mapping for GET /flights
+2025-03-11 14:42:38 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11 14:42:38 - HikariPool-1 - Shutdown initiated...
+2025-03-11 14:42:38 - HikariPool-1 - Shutdown completed.
+2025-03-15 11:24:14 - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-15 11:24:14 - Starting FlightBookingApplication using Java 17.0.14 with PID 1496142 (/home/kelli/flightplanner/flightplanner-api/target/classes started by kelli in /home/kelli/flightplanner/flightplanner-api)
+2025-03-15 11:24:14 - Running with Spring Boot v3.1.5, Spring v6.0.13
+2025-03-15 11:24:14 - No active profile set, falling back to 1 default profile: "default"
+2025-03-15 11:24:15 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-15 11:24:15 - Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2025-03-15 11:24:16 - Tomcat initialized with port(s): 8081 (http)
+2025-03-15 11:24:16 - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-15 11:24:16 - Starting service [Tomcat]
+2025-03-15 11:24:16 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-03-15 11:24:16 - Initializing Spring embedded WebApplicationContext
+2025-03-15 11:24:16 - Root WebApplicationContext: initialization completed in 1372 ms
+2025-03-15 11:24:16 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-15 11:24:16 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-03-15 11:24:16 - HHH000406: Using bytecode reflection optimizer
+2025-03-15 11:24:16 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-15 11:24:16 - HikariPool-1 - Starting...
+2025-03-15 11:24:16 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@144e36ae
+2025-03-15 11:24:16 - HikariPool-1 - Start completed.
+2025-03-15 11:24:17 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-15 11:24:17 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-15 11:24:18 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-15 11:24:18 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-15 11:24:19 - Exposing 14 endpoint(s) beneath base path '/actuator'
+2025-03-15 11:24:19 - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-15 11:24:19 - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-15 11:24:19 - Started FlightBookingApplication in 4.985 seconds (process running for 5.252)
+2025-03-15 11:24:32 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-15 11:24:32 - Initializing Servlet 'dispatcherServlet'
+2025-03-15 11:24:32 - Completed initialization in 1 ms
+2025-03-15 11:24:33 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 11:24:33 - No mapping for GET /images/logo.svg
+2025-03-15 11:27:09 - No mapping for GET /flights
+2025-03-15 11:28:07 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 11:28:07 - No mapping for GET /images/logo.svg
+2025-03-15 11:45:21 - No mapping for GET /flights
+2025-03-15 11:45:41 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-15 11:45:41 - No mapping for GET /favicon.ico
