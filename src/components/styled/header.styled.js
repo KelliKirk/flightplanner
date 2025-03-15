@@ -15,6 +15,6 @@ margin-bottom: 40px;
 export const Logo = styled.img`
 width: 150px;`
 export const Image = styled.img`
-width: 250px;
+width: 200px;
 margin-left: 40px;
 `

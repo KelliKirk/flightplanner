@@ -16,13 +16,13 @@ const SearchContainer = styled.div`
 
 const ButtonContainer = styled.div`
   display: flex;
-  justify-content: flex-end; /* Asetab nupu paremale */
+  justify-content: flex-end; 
   width: 100%;
-  margin-top: 1rem; /* Lisa vahe filtrite ja nupu vahele */
+  margin-top: 1rem; 
 `;
 
 const StyledButton = styled(Button)`
-  padding: 0.5rem 1rem; /* Väiksem nupp */
+  padding: 0.5rem 1rem; 
   font-size: 0.9rem;
 `;
 

@@ -1234,3 +1234,5 @@ java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigin
 2025-03-15 13:16:53 - No mapping for GET /images/illustration-mockups.svg
 2025-03-15 13:20:09 - No mapping for GET /images/logo.svg
 2025-03-15 13:20:09 - No mapping for GET /images/illustration-mockups.svg
+2025-03-15 13:52:29 - No mapping for GET /logo192.png
+2025-03-15 13:52:29 - No mapping for GET /favicon.ico
