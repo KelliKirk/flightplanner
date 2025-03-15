@@ -18,7 +18,7 @@ export default function Header() {
         <StyledHeader>
             <Container>
                 <Nav>
-                    <Logo src='./images/logo.svg' alt='FlightPlanner Logo'/>
+                    <Logo src='./images/plane.svg' alt='FlightPlanner Logo'/>
                 </Nav>
                 <Flex>
                     <div>
@@ -27,15 +27,11 @@ export default function Header() {
                             FlightPlanner makes booking and managing your flights effortless.  
                             Explore destinations, find the best seats, and customize your travel experience with ease.
                         </p>
-                        <StyledButton 
-                            bg='#ff0099' 
-                            color='#fff'
-                            onClick={handleStartPlanning}
-                        >
-                            Start Planning Now
-                        </StyledButton>
+                    
+                            <h2>Start Planning Now</h2>
+                        
                     </div>
-                    <Image src='./images/illustration-mockups.svg' alt='Flight Illustration'/>
+                    <Image src='./images/plane-window.svg' alt='Flight Illustration'/>
                 </Flex>
             </Container>
         </StyledHeader>
