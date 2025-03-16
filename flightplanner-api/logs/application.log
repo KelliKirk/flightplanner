@@ -1342,3 +1342,143 @@ java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigin
 2025-03-15 18:07:40 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-15 18:07:40 - HikariPool-1 - Shutdown initiated...
 2025-03-15 18:07:40 - HikariPool-1 - Shutdown completed.
+2025-03-16 15:29:49 - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-16 15:29:49 - Starting FlightBookingApplication using Java 17.0.14 with PID 101164 (/home/kelli/flightplanner/flightplanner-api/target/classes started by kelli in /home/kelli/flightplanner/flightplanner-api)
+2025-03-16 15:29:49 - Running with Spring Boot v3.1.5, Spring v6.0.13
+2025-03-16 15:29:49 - No active profile set, falling back to 1 default profile: "default"
+2025-03-16 15:29:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-16 15:29:49 - Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+2025-03-16 15:29:50 - Tomcat initialized with port(s): 8081 (http)
+2025-03-16 15:29:50 - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-16 15:29:50 - Starting service [Tomcat]
+2025-03-16 15:29:50 - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2025-03-16 15:29:50 - Initializing Spring embedded WebApplicationContext
+2025-03-16 15:29:50 - Root WebApplicationContext: initialization completed in 1078 ms
+2025-03-16 15:29:50 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-16 15:29:50 - HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-03-16 15:29:50 - HHH000406: Using bytecode reflection optimizer
+2025-03-16 15:29:50 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-16 15:29:50 - HikariPool-1 - Starting...
+2025-03-16 15:29:50 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e159116
+2025-03-16 15:29:50 - HikariPool-1 - Start completed.
+2025-03-16 15:29:51 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-16 15:29:51 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16 15:29:52 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-16 15:29:52 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-16 15:29:52 - Exposing 14 endpoint(s) beneath base path '/actuator'
+2025-03-16 15:29:52 - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-16 15:29:52 - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-16 15:29:52 - Started FlightBookingApplication in 4.005 seconds (process running for 4.262)
+2025-03-16 15:30:26 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-16 15:30:26 - Initializing Servlet 'dispatcherServlet'
+2025-03-16 15:30:26 - Completed initialization in 1 ms
+2025-03-16 15:30:26 - No mapping for GET /
+2025-03-16 15:30:26 - No mapping for GET /favicon.ico
+2025-03-16 15:30:32 - No mapping for GET /api/
+2025-03-16 15:30:36 - 
+    select
+        f1_0.id,
+        f1_0.aircraft,
+        f1_0.arrival_time,
+        f1_0.capacity,
+        f1_0.departure_time,
+        f1_0.destination,
+        f1_0.flight_number,
+        f1_0.origin,
+        f1_0.price 
+    from
+        flights f1_0
+2025-03-16 15:30:36 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-16 15:30:36 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-16 15:30:36 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-16 15:30:36 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-16 15:30:36 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-16 15:30:36 - 
+    select
+        s1_0.flight_id,
+        s1_0.id,
+        s1_0.has_extra_legroom,
+        s1_0.is_exit_row_seat,
+        s1_0.is_occupied,
+        s1_0.is_window_seat,
+        s1_0.seat_class,
+        s1_0.seat_number,
+        s1_0.seat_type 
+    from
+        seats s1_0 
+    where
+        s1_0.flight_id=?
+2025-03-16 15:30:36 - No mapping for GET /favicon.ico
+2025-03-16 15:31:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-16 15:31:03 - HikariPool-1 - Shutdown initiated...
+2025-03-16 15:31:03 - HikariPool-1 - Shutdown completed.
