@@ -109,7 +109,7 @@ npm install
 Start the application:
 Copymvn spring-boot:run
 
-Open http://localhost:8081/api/flights  in your browser
+Open http://localhost:8081/api/flights in your browser, http://localhost:3020 for frontend
 
 Future Improvements
 
