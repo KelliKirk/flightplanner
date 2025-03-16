@@ -59,8 +59,8 @@ const FlightTable = ({ flights }) => {
               <Td>{flight.airline}</Td>
               <Td>{flight.origin}</Td>
               <Td>{flight.destination}</Td>
-              <Td>{new Date(flight.departureTime).toLocaleString()}</Td>
-              <Td>{new Date(flight.arrivalTime).toLocaleString()}</Td>
+              <Td>{new Date(flight.departureTime).toLocaleString('en-GB', { dateStyle: 'medium', timeStyle: 'short' })}</Td>
+              <Td>{new Date(flight.arrivalTime).toLocaleString('en-GB', { dateStyle: 'medium', timeStyle: 'short' })}</Td>
               <Td>{flight.price} €</Td>
               <Td>
                 <Button 
